@@ -8,6 +8,10 @@ kubectl get pv
 kubectl get pvc
 kubectl describe pvc
 
+# delete pvc
+kubectl delete pvc mysql-pv-claim
+kubectl delete pvc wp-pv-claim
+
 # add secret for MySQL
 kubectl create secret generic mysql-pass --from-literal=password=P@ssw0rd1234
 kubectl get secrets
